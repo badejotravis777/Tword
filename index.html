@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-screen" class="auth-screen">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username or Email">
+        <input type="password" id="login-password" placeholder="Password (Numbers Only)">
+        <button id="login-button">Login</button>
+        <p id="login-error"></p>
+        <p>Don't have an account? <a href="#" id="go-to-signup">Sign Up</a></p>
+        <footer>
+            <p>Produced by Travrick Industries</p>
+            <p>Contact: badejotravis7@gmail.com | +2349116036356</p>
+            <p>President: Badejo Olatunbosun Travis</p>
+            <p>Vice President: Oyinkansola Grace Odugbemi</p>
+        </footer>
+    </div>
+    <div id="signup-screen" class="auth-screen hidden">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="First Name Last Name">
+        <input type="password" id="signup-password" placeholder="Password (Numbers Only)">
+        <input type="email" id="signup-email" placeholder="Email">
+        <button id="signup-button">Sign Up</button>
+        <p id="signup-error"></p>
+        <p>Already have an account? <a href="#" id="go-to-login">Login</a></p>
+        <footer>
+            <p>Produced by Travrick Industries</p>
+            <p>Contact: badejotravis7@gmail.com | +2349116036356</p>
+            <p>President: Badejo Olatunbosun Travis</p>
+            <p>Vice President: Oyinkansola Grace Odugbemi</p>
+        </footer>
+    </div>
+    <div id="welcome-screen" class="hidden">
+        <h2>Welcome to the Number Guessing Game!</h2>
+        <button id="start-button">Start Game</button>
+        <button id="show-records-button">Show Past Matches</button>
+        <button id="quit-button">Quit</button>
+        <div id="past-matches" class="hidden">
+            <h3>Past Matches (Last 30 Days)</h3>
+            <ul id="past-matches-list"></ul>
+        </div>
+    </div>
+    <div id="game-container" class="hidden">
+        <h2>Guess the Number</h2>
+        <div id="moving-box"></div>
+        <input type="number" id="input" placeholder="Enter a number between 1 and 100">
+        <button id="submit-button">Submit</button>
+        <button id="reset-button" style="display:none;">Play Again</button>
+        <p id="message"></p>
+    </div>
+    <footer>
+        <p>Produced by Travrick Industries</p>
+        <p>Contact: badejotravis7@gmail.com | +2349116036356</p>
+        <p>President: Badejo Olatunbosun Travis</p>
+        <p>Vice President: Oyinkansola Grace Odugbemi</p>
+        <p>Total Users: <span id="total-users">0</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
